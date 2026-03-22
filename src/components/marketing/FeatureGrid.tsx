@@ -86,7 +86,7 @@ export function FeatureGrid() {
             Everything a UK landlord needs
           </h2>
           <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-            Built specifically for the UK private rented sector, with all the tools you actually use — nothing you don't.
+            Built specifically for the UK private rented sector, with all the tools you actually use — nothing you don&apos;t.
           </p>
         </div>
 
