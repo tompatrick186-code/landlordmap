@@ -43,7 +43,7 @@ export default function DocumentsPage() {
     const supabase = createClient()
     const [{ data: docs }, { data: props }, { data: tens }] = await Promise.all([
       supabase.from('documents').select('*').order('created_at', { ascending: false }),
-      supabase.from('properties').select('id, title'),
+      supabase.from('properties').select('*'),
       supabase.from('tenants').select('id, first_name, last_name').eq('status', 'active'),
     ])
     setDocuments(docs || [])
